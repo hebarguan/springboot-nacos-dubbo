@@ -16,11 +16,11 @@ public class OrderController {
     @Value("${testValue}")
     private String testValue;
 
-    @RequestMapping(value = "/order/make.do", method = RequestMethod.POST)
-    public Map<String, Object> makeOder(@RequestBody Map<String, Object> params) {
+    @RequestMapping(value = "/order/make.do")
+    public Map<String, Object> makeOder(@RequestParam String name) {
 
         System.out.println(orderService);
-        return orderService.makeOrder(params.get("goodsName").toString());
+        return orderService.makeOrder(name);
     }
 
     @RequestMapping("/order/test")
