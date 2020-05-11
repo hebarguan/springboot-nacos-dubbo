@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: shop-order-provider
+nacos:
+  config:
+    bootstrap:
+      enable: true
+    server-addr: 127.0.0.1:8848
+    namespace: c877e70b-a16e-453c-ada5-b2785313ab5f
+    type: yaml
+    data-id: shop-order-provider
+  discovery:
+    server-addr: 127.0.0.1:8848

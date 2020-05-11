@@ -1,0 +1,10 @@
+nacos:
+  config:
+    bootstrap:
+      enable: true
+    namespace: c877e70b-a16e-453c-ada5-b2785313ab5f
+    server-addr: 10.1.12.117:8848
+    data-id: shop-order-api
+    type: yaml
+  discovery:
+    server-addr: 127.0.0.1:8848

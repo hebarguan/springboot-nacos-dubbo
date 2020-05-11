@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: shop-order-api
+  profiles:
+    active: local
+
