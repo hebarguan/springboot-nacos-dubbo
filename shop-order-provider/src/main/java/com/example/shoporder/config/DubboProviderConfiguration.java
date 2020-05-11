@@ -32,7 +32,6 @@ public class DubboProviderConfiguration {
     public RegistryConfig registryConfig() {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setAddress(providerRegistryAddr);
-        registryConfig.setPort(2181);
         return registryConfig;
     }
 
