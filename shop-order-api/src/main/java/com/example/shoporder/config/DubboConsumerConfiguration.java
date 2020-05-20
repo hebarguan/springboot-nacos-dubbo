@@ -21,9 +21,7 @@ public class DubboConsumerConfiguration {
         ApplicationConfig applicationConfig = new ApplicationConfig();
         applicationConfig.setName("dubbo-annotation-consumer");
         Map<String, String> stringStringMap = new HashMap<String, String>();
-        stringStringMap.put("qos.enable", "true");
-        stringStringMap.put("qos.accept.foreign.ip", "false");
-        stringStringMap.put("qos.port", "33333");
+        stringStringMap.put("qos.enable", "false");
         applicationConfig.setParameters(stringStringMap);
         return applicationConfig;
     }
