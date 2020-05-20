@@ -37,7 +37,6 @@ public class DubboConsumerConfiguration {
     public RegistryConfig registryConfig() {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setAddress(customerRegistryAddr);
-        registryConfig.setPort(2181);
         return registryConfig;
     }
 }
